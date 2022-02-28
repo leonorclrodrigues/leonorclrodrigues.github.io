@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leonor Rodrigues</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/icon_pato.PNG" type="image" sizes="16x16">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
+</head>
+
+<body>
+
+<audio id="mysound" src="audio/quack_se.mp3"></audio>
+
+<div class="cookiestotal">
+
+    <div id="cookie1">
+        <img onmouseover="document.getElementById('mysound').play()" onmouseout="document.getElementById('mysound').pause()" src="img/cookie_pato.png" alt="Duck Cookie" width="100%">
+    </div>
+
+    <div id="cookie2">
+        <img onmouseover="document.getElementById('mysound').play()" onmouseout="document.getElementById('mysound').pause()" src="img/cookie_pato.png" alt="Duck Cookie" width="100%">
+    </div>
+
+    <div id="cookie3">
+        <img onmouseover="document.getElementById('mysound').play()" onmouseout="document.getElementById('mysound').pause()" src="img/cookie_pato.png" alt="Duck Cookie" width="100%">
+    </div>
+
+    <div id="cookie4">
+        <img onmouseover="document.getElementById('mysound').play()" onmouseout="document.getElementById('mysound').pause()" src="img/cookie_pato.png" alt="Duck Cookie" width="100%">
+    </div>
+
+    <div id="cookie5">
+        <img onmouseover="document.getElementById('mysound').play()" onmouseout="document.getElementById('mysound').pause()" src="img/cookie_pato.png" alt="Duck Cookie" width="100%">
+    </div>
+
+    <div id="cookie6">
+        <img onmouseover="document.getElementById('mysound').play()" onmouseout="document.getElementById('mysound').pause()" src="img/cookie_pato.png" alt="Duck Cookie" width="100%">
+    </div>
+
+    <div id="cookie7">
+        <img onmouseover="document.getElementById('mysound').play()" onmouseout="document.getElementById('mysound').pause()" src="img/cookie_pato.png" alt="Duck Cookie" width="100%">
+    </div>
+
+    <div id="cookie8">
+        <img onmouseover="document.getElementById('mysound').play()" onmouseout="document.getElementById('mysound').pause()" src="img/cookie_pato.png" alt="Duck Cookie" width="100%">
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript">
+    (function($) {
+        $(function(){
+                $("a.play").each(function() {
+                  $(this).mouseover(function(){ 
+                       var mp3file = $(this).attr('href');
+                  }).mouseout(function() { 
+                  });
+                });
+        });
+    })(jQuery);
+</script>
+
+</script>
+
+</body>

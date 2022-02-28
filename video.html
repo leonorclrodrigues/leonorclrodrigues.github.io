@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leonor Rodrigues</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/icon_pato.PNG" type="image" sizes="16x16">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
+</head>
+
+<!-- CSS linha 283-390 -->
+<body>
+<div class="container">
+
+    <nav>
+        <div class="nav" id="nave">
+            <div class="logo"><img src="img/logo_psb2.png" width="90px"></div>
+           <div class="home"><a href="index.html">Leonor Rodrigues</a></div>
+            <div class="work">
+            <div class="work_btn">Work</div>
+                <div class="work_drop">
+                    <ul>
+                        <li><a href="desenho.html">Drawings</a></li>
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="2d3d.html">2D and 3D Animation/ Modeling</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about"><a href="about.html">About</a></div>
+            <div class="wow"></div>
+            <div class="wow"></div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <!--add to all number text with respective placing in gallery-->
+              <div class="numbertext">BGreen '20: Esboço ("Sketch")</div>
+              <iframe width="800" height="450" src="https://www.youtube.com/embed/XWcuqg1HGac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="text"> Production of a video spot for the contest BGreen with a maximum duration of 45 seconds, whose theme was "Earthability". </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">BGreen "Esboço": Making Of</div>
+              <iframe width="800" height="450" src="https://www.youtube.com/embed/agQcWXiI6m8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="text"> "Making of" of BGreen, it just records all of the process throughout the experience.</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">Teaser: "De Poucas palavras" ("Of Few Words") </div>
+              </a>
+              <iframe width="800" height="450" src="https://www.youtube.com/embed/jRVNRmTqbjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="text">Teaser for a Short Film where I contributed on the Production.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">Documentary: Arts and Crafts of V.N.Gaia</div>
+                </a>
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/VCtSi-dWQAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="text"> An interview that I directed with three other colleagues aiming to show off V.N. Gaia's artists.</div>
+              </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext"> Visual Poem: "Sozinho com toda a Gente" ("Alone with everyone else")</div>
+              </a>
+              <iframe width="800" height="450" src="https://www.youtube.com/embed/LZiK5gHH9lk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="text">A Short Film based on a poem by Charles Bukowski, where I focused on production and post-production.</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext"> Narrative: "Alethea"</div>
+              </a>
+              <iframe width="800" height="450" src="https://www.youtube.com/embed/mt2ClaUqpSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="text">A Short Film by Ivania Gomes where I took a part as an extra in one of the scenes. (as in the cover);  </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"> "Friends Go"</div>
+                </a>
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/LuiNYcuOpg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="text">Developed during quarentine with a group of 4 friends for a class in 11th grade, this is a Short Film that revolves around mental ilness.</div>
+              </div>
+
+        <!--BUTOES-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+              <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+
+        <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+        </script>
+
+    </main>
+
+    <footer>
+
+      <div class="footer_geral">
+
+
+        <p><a id="tac" href="terms.html" >Terms and Conditions</a>
+        <a id="cp" href="cookie.html" >Cookie Policy</a></p>
+
+        <div class="logos">
+         <a id="instaf" href="https://www.instagram.com/leonorpsb/" target="blank"><img src="img/logo_insta_2.PNG" width="32px"></a>
+         <a id="mailf" href="mailto:leonorclrodrigues@gmail.com" target="blank"><img src="img/logo_mail2.PNG" width="32px"></a>  
+         <a id="youtubef" href="https://www.youtube.com/channel/UC4k5P86L7KcD2qqTEseLqwA" target="blank"><img src="img/logo_youtube_2.PNG" width="35px"></a> 
+        </div>
+  
+        <p id="pun">What's a duck's favorite ballet? The Nutquacker! #PSB</p>
+        <p id="des">@Designed and Developed by Leonor Rodrigues, 2021 (last update 12/2021)</p>
+        <br>
+
+
+      </div> 
+
+    </footer>
+
+</div>    
+</body>
+
+</html>
